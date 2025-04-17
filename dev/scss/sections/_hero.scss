@@ -11,15 +11,21 @@
         article{
             h1{
                 color: var(--nightBlue);
+                font-size: helpers.rem-calc(50);
             }
 
             p{
-                color: var(--grey)
+                color: var(--grey);
+                font-weight: 600;
+                line-height: helpers.rem-calc(28);
             }
 
             a:link, a:visited{
                 background-color: var(--nightBlue);
                 color: var(--white);
+                font-size: helpers.rem-calc(14);
+                font-weight: 600;
+                
 
             }
             a:hover, a:focus{
@@ -28,6 +34,7 @@
             button{
                 background-color: var(--white) ;
                 border: none;
+               
 
             }
         }
@@ -37,6 +44,14 @@
 
             h5{
                 color: var(--nightBlue);
+                font-weight: 600;
+                font-size: helpers.rem-calc(14);
+            }
+
+            p{
+                font-size: helpers.rem-calc(14);
+                font-weight: 600;
+                line-height: helpers.rem-calc(24);
             }
         }
     }
