@@ -1,0 +1,39 @@
+/* =============
+    About
+============= */
+@use "../helpers";
+
+#about {
+    background-color: var(--white);
+    padding: 100px 24px;
+
+    p {
+        color: var(--grey);
+        font-weight: 600;
+        line-height: helpers.rem-calc(28);
+    }
+
+    ul {
+        margin-top: 40px;
+
+        li {
+            margin-bottom: 32px;
+
+            h4 {
+                color: var(--nightBlue);
+                font-weight: 600;
+                font-size: helpers.rem-calc(20);
+                margin-bottom: 8px;
+            }
+
+            p {
+                color: var(--grey);
+                font-weight: 600;
+                line-height: helpers.rem-calc(28);
+            }
+        }
+    }
+
+   
+}
+

@@ -1,0 +1,17 @@
+/* =============
+    Communication
+============= */
+@use "../helpers";
+
+#communication {
+    background-color: var(--white);
+    padding: 100px 24px;
+
+    p {
+        color: var(--grey);
+        font-weight: 600;
+        line-height: helpers.rem-calc(28);
+    }
+
+    
+}
