@@ -374,6 +374,26 @@ a {
   text-decoration: none;
 }
 
+.nightBlue-link {
+  background-color: var(--nightBlue);
+  color: var(--white);
+  font-size: 0.875rem;
+  font-weight: 600;
+  padding: 22px 36px;
+  border-radius: 6px;
+  display: inline-block;
+}
+
+.nightBlue-btn {
+  background-color: var(--nightBlue);
+  color: var(--white);
+  font-size: 0.875rem;
+  font-weight: 600;
+  padding: 22px 36px;
+  border-radius: 6px;
+  border: none;
+}
+
 /* =============
     Forms
 ============= */
@@ -515,24 +535,34 @@ textarea {
     Newsletter 
 ============= */
 #newsletter {
-  background-color: var(--lilyWhite);
+  padding: 40px 24px;
 }
-#newsletter p {
+#newsletter #newsletter-content {
+  background-color: var(--lilyWhite);
+  padding: 60px 16px;
+}
+#newsletter #newsletter-content p {
   color: var(--grey);
   font-weight: 600;
   line-height: 1.75rem;
+  margin: 16px 0;
 }
-#newsletter form input {
+#newsletter #newsletter-content form input {
   border: none;
   color: var(--grey);
   font-weight: 600;
+  width: 100%;
+  padding: 24px 8px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 8px;
+  margin-bottom: 16px;
 }
-#newsletter form button {
-  border: none;
-  background-color: var(--nightBlue);
-  color: var(--white);
-  font-weight: 600;
-  line-height: 0.875rem;
+#newsletter #newsletter-content form div {
+  text-align: right;
+}
+#newsletter aside {
+  display: none;
 }
 
 /* =============
