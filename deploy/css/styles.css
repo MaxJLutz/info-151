@@ -769,6 +769,24 @@ textarea {
   font-weight: 600;
   line-height: 1.75rem;
 }
+@media (min-width: 992px) {
+  #about {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 60% 60px auto;
+    grid-template-columns: 60% auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+#about .img-scaler {
+  max-width: 100%;
+  height: auto;
+}
 
 /* =============
     Communication
@@ -781,6 +799,24 @@ textarea {
   color: var(--grey);
   font-weight: 600;
   line-height: 1.75rem;
+}
+@media (min-width: 992px) {
+  #communication {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 60% 60px auto;
+    grid-template-columns: 60% auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+#communication .img-scaler {
+  max-width: 100%;
+  height: auto;
 }
 
 /* =============
@@ -805,6 +841,15 @@ textarea {
           flex-direction: column;
   gap: 32px;
   margin-top: 40px;
+}
+@media (min-width: 992px) {
+  #process ul {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 60px 1fr 60px 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+  }
 }
 #process ul li img {
   margin-bottom: 16px;

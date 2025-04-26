@@ -13,5 +13,19 @@
         line-height: helpers.rem-calc(28);
     }
 
-    
+    @include helpers.lg {
+        display: grid;
+        grid-template-columns: 60% auto;
+        align-items: center;
+        gap: 60px;
+
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .img-scaler {
+        max-width: 100%;
+        height: auto;
+    }
 }
+

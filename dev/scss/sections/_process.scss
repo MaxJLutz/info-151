@@ -19,6 +19,12 @@
         gap: 32px;
         margin-top: 40px;
 
+        @include helpers.lg {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 60px;
+        }
+
         li {
             img {
                 margin-bottom: 16px;
