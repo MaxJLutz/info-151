@@ -4,51 +4,72 @@
 @use "../helpers";
 
 #about {
-    background-color: var(--white);
-    padding: 100px 24px;
+  background-color: var(--white);
+  padding: 100px 24px;
+
+  
+  #about-content {
+    @include helpers.lg {
+      display: flex;
+      align-items: center;
+      gap: 60px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+  }
+
+  
+  #about-left {
+    @include helpers.lg {
+      padding-right: 40px;
+    }
 
     p {
-        color: var(--grey);
-        font-weight: 600;
-        line-height: helpers.rem-calc(28);
+      color: var(--grey);
+      font-weight: 600;
+      line-height: helpers.rem-calc(28);
     }
 
     ul {
-        margin-top: 40px;
+      margin-top: 40px;
 
-        li {
-            margin-bottom: 32px;
+      li {
+        margin-bottom: 32px;
 
-            h4 {
-                color: var(--nightBlue);
-                font-weight: 600;
-                font-size: helpers.rem-calc(20);
-                margin-bottom: 8px;
-            }
-
-            p {
-                color: var(--grey);
-                font-weight: 600;
-                line-height: helpers.rem-calc(28);
-            }
+        h4 {
+          color: var(--nightBlue);
+          font-weight: 600;
+          font-size: helpers.rem-calc(20);
+          margin-bottom: 8px;
         }
-    }
 
+        p {
+          color: var(--grey);
+          font-weight: 600;
+          line-height: helpers.rem-calc(28);
+        }
+      }
+    }
+  }
+
+  
+  aside {
+    display: none;
+    
     @include helpers.lg {
-        display: grid;
-        grid-template-columns: 60% auto;
-        align-items: center;
-        gap: 60px;
-
-        max-width: 1200px;
-        margin: 0 auto;
-    }
-
-    .img-scaler {
-        max-width: 100%;
+        display: flex;                 
+        flex: 1;                       
+        align-items: center;          
+        justify-content: center;      
+        min-width: 600px;             
+        max-width: 1200px;             
+      }
+  
+      .img-scaler {
+        display: block;
+        width: 100%;
         height: auto;
+        object-fit: contain;
+      }
     }
-
-   
-}
-
+  }

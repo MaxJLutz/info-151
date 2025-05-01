@@ -878,34 +878,11 @@ textarea {
   background-color: var(--white);
   padding: 100px 24px;
 }
-#about p {
-  color: var(--grey);
-  font-weight: 600;
-  line-height: 1.75rem;
-}
-#about ul {
-  margin-top: 40px;
-}
-#about ul li {
-  margin-bottom: 32px;
-}
-#about ul li h4 {
-  color: var(--nightBlue);
-  font-weight: 600;
-  font-size: 1.25rem;
-  margin-bottom: 8px;
-}
-#about ul li p {
-  color: var(--grey);
-  font-weight: 600;
-  line-height: 1.75rem;
-}
 @media (min-width: 992px) {
-  #about {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 60% 60px auto;
-    grid-template-columns: 60% auto;
+  #about #about-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -914,9 +891,60 @@ textarea {
     margin: 0 auto;
   }
 }
-#about .img-scaler {
-  max-width: 100%;
+@media (min-width: 992px) {
+  #about #about-left {
+    padding-right: 40px;
+  }
+}
+#about #about-left p {
+  color: var(--grey);
+  font-weight: 600;
+  line-height: 1.75rem;
+}
+#about #about-left ul {
+  margin-top: 40px;
+}
+#about #about-left ul li {
+  margin-bottom: 32px;
+}
+#about #about-left ul li h4 {
+  color: var(--nightBlue);
+  font-weight: 600;
+  font-size: 1.25rem;
+  margin-bottom: 8px;
+}
+#about #about-left ul li p {
+  color: var(--grey);
+  font-weight: 600;
+  line-height: 1.75rem;
+}
+#about aside {
+  display: none;
+}
+@media (min-width: 992px) {
+  #about aside {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    min-width: 600px;
+    max-width: 1200px;
+  }
+}
+#about aside .img-scaler {
+  display: block;
+  width: 100%;
   height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 /* =============
